@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #870000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    width: 20%;
+    height: 40%;
+    position: relative;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    border: 20px solid;
+    border-color: white;
+    position: relative;
+    overflow: hidden;
+    background: #fed4fa;
+    z-index: -1;
+    animation: main 25s linear infinite;
+}
+
+.pr {
+    width: 24%;
+    height: 2%;
+    background-color: #f5c6c5;
+}
+
+.sun {
+    position: absolute;
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    top: 20%;
+    left: 70%;
+    background-color: #fffdd7;
+    z-index: -50;
+    animation: sun 25s ease-in-out infinite;
+}
+
+.moon {
+    position: absolute;
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    top: 10%;
+    left: 100%;
+    z-index: -50;
+    animation: moon 25s linear infinite;
+    background-color: #d0d9df;
+
+}
+
+.star {
+    width: 2%;
+    height: 2%;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: star 40s linear infinite;
+}
+
+.star1 {
+    width: 2%;
+    height: 2%;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    top: 5%;
+    opacity: 0;
+    left: 20%;
+    animation: star 40s linear infinite;
+}
+
+.star2 {
+    width: 2%;
+    height: 2%;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    animation: star 40s linear infinite;
+}
+
+.star3 {
+    width: 2%;
+    height: 2%;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    animation: star 40s linear infinite;
+}
+
+.cloud {
+    width: 60px;
+    height: 30px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: white;
+    position: absolute;
+    top: 12%;
+    left: 100%;
+    animation: cloud 25s linear infinite;
+}
+
+.cloud2 {
+    width: 60px;
+    height: 30px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: white;
+    position: absolute;
+    top: 8%;
+    left: 100%;
+    animation: cloud2 25s linear infinite;
+}
+
+.pole {
+    width: 250%;
+    height: 250%;
+    position: absolute;
+    top: 63%;
+    left: -50%;
+    border-radius: 50%;
+    background-color: #c4918d;
+    animation: pole 25s infinite;
+}
+
+.gora {
+    width: 130px;
+    height: 60px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    background-color: #e09c9b;
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    z-index: -10;
+    animation: gora1 25s linear infinite;
+
+}
+
+.gora2 {
+    width: 130px;
+    height: 60px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    background-color: #e09c9b;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    z-index: -20;
+    animation: gora1 25s linear infinite;
+}
+
+.gora3 {
+    width: 130px;
+    height: 60px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    background-color: #e09c9b;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    z-index: -20;
+    animation: gora1 25s linear infinite;
+}
+
+.gora4 {
+    width: 33%;
+    height: 33%;
+    border-radius: 20% 20% 20% 20%;
+    background-color: #f1a3a3;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 30%;
+    left: -9%;
+    z-index: -20;
+    animation: gora2 25s linear infinite;
+
+}
+
+.gora5 {
+    width: 50%;
+    height: 50%;
+    border-radius: 15% 15% 15% 15%;
+    background-color: #f1a3a3;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 22%;
+    left: 28%;
+    z-index: -50;
+    animation: gora2 25s linear infinite;
+}
+
+.gora6 {
+    width: 33%;
+    height: 33%;
+    border-radius: 20% 20% 20% 20%;
+    background-color: #f1a3a3;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 25%;
+    left: 85%;
+    z-index: -50;
+    animation: gora2 25s linear infinite;
+
+}
+
+.stvol {
+    width: 5%;
+    height: 20%;
+    background-color: #8d5d52;
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    animation: stvol 25s linear infinite;
+}
+
+.stvol2 {
+    width: 5%;
+    height: 15%;
+    background-color: #8d5d52;
+    position: absolute;
+    top: 65%;
+    left: 70%;
+    animation: stvol 25s linear infinite;
+}
+
+.stvol3 {
+    width: 3%;
+    height: 10%;
+    background-color: #8d5d52;
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    animation: stvol 25s linear infinite;
+}
+
+.listya {
+    width: 20%;
+    height: 35%;
+    background-color: #cf791a;
+    border-radius: 50%;
+    position: absolute;
+    left: 72%;
+    top: 35%;
+    z-index: 20;
+    box-shadow: 10px 10px 5px rgba(216, 147, 70, 255) inset;
+    animation: listya 25s linear infinite;
+}
+
+.listya2 {
+    width: 20%;
+    height: 30%;
+    background-color: #cf791a;
+    border-radius: 50%;
+    position: absolute;
+    left: 62%;
+    top: 40%;
+    box-shadow: 10px 10px 5px rgba(216, 147, 70, 255) inset;
+    animation: listya 25s linear infinite;
+
+}
+
+.listya3 {
+    width: 13%;
+    height: 20%;
+    background-color: #cf791a;
+    border-radius: 50%;
+    position: absolute;
+    left: 20%;
+    top: 57%;
+    box-shadow: 10px 10px 5px rgba(216, 147, 70, 255) inset;
+    animation: listya 25s linear infinite;
+}
+
+.cat {
+    position: absolute;
+    z-index: 100;
+    top: 70%;
+    left: 80%;
+    height: 120px;
+    width: 100px;
+}
+
+@keyframes sun {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        top: 0%;
+        left: 20%;
+        background-color: #f8db59;
+        box-shadow: 0 10px 15px #e7e5b4;
+    }
+
+    50% {
+        top: 20%;
+        left: 15%;
+        background-color: #ffffff;
+    }
+
+    100% {
+        top: 50%;
+    }
+
+}
+
+@keyframes gora1 {
+    0% {
+        animation: none;
+    }
+
+    25% {
+        background-color: #38c6b0;
+    }
+
+    50% {
+        background-color: #e6ad28;
+    }
+
+    100% {
+        background-color: #659fcd;
+    }
+}
+
+@keyframes gora2 {
+    0% {
+        animation: none;
+    }
+
+    25% {
+        background-color: #86d6d5;
+    }
+
+    50% {
+        background-color: #efbb2a;
+    }
+
+    100% {
+        background-color: #73addf;
+    }
+}
+
+@keyframes pole {
+    0% {
+        animation: none;
+    }
+
+    25% {
+        background-color: #4bb5ab;
+    }
+
+    50% {
+        background-color: #dd9f26;
+    }
+
+    100% {
+        background-color: #508bb5;
+    }
+}
+
+@keyframes listya {
+    0% {
+        animation: none;
+    }
+
+    25% {
+        box-shadow: 10px 10px 5px #b2df76 inset;
+        background-color: #a0d755;
+    }
+
+    50% {
+        box-shadow: 10px 10px 5px #90963c inset;
+        background-color: #747c0b;
+    }
+
+    100% {
+        box-shadow: 10px 10px 5px #495561 inset;
+        background-color: #1c2c3b;
+    }
+}
+
+@keyframes main {
+    0% {
+        animation: none;
+    }
+
+    25% {
+        background-color: #b4efff;
+    }
+
+    50% {
+        background-color: #f5fa9c;
+    }
+
+    100% {
+        background-color: #17387f;
+    }
+}
+
+@keyframes cloud {
+    0% {
+        animation: none;
+    }
+
+    20% {
+        left: 30%;
+    }
+
+    50%,
+    100% {
+        left: 100%
+    }
+}
+
+@keyframes cloud2 {
+    0% {
+        animation: none;
+    }
+
+    25% {
+        left: 30%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes stvol {
+    0% {
+        animation: none;
+    }
+
+    25% {
+        animation: none;
+    }
+
+    50% {
+        background-color: rgba(57, 63, 57, 255);
+    }
+
+    100% {
+        background-color: rgba(57, 63, 57, 255);
+    }
+}
+
+@keyframes moon {
+    0% {
+        top: 10%;
+        left: 100%;
+    }
+
+    25% {
+        top: 10%;
+        left: 100%;
+    }
+
+    50% {
+        top: 10%;
+        left: 100%;
+    }
+
+    100% {
+        left: 20%;
+    }
+}
+
+@keyframes star {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
